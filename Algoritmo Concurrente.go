@@ -130,7 +130,7 @@ func printAssignments(assignments []int, numAssignments int) {
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	nSamples := 100000 //es numero de datos que tenemos como pide el enunciado
+	nSamples := 1000000 //es numero de datos que tenemos como pide el enunciado
 	nFeatures := 2
 	k := 3                //el numero de clusteres
 	maxIterations := 1000 //el numero de iteraciones como pide el enunciado
