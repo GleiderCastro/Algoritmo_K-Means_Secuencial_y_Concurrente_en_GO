@@ -91,7 +91,7 @@ Al utilizar concurrencia y goroutines se puede reducir significativamente el tie
 Se concluye que el algoritmo K-means concurrente ofrece un mayor potencial de rendimiento y escalabilidad en sistemas con múltiples núcleos. Sin embargo, es importante considerar las necesidades específicas de la aplicación, la complejidad de la implementación y los recursos disponibles al elegir entre el algoritmo secuencial y el concurrente.
 # 8. Link del repositorio de Github y del video.
 * A continuación se muestra el link del repositorio: https://github.com/GleiderCastro/Aplicacion-en-GO---PCYD.git.
-* Link del video: 
+* Link del video: https://youtu.be/O0qQkNbNE7k 
 # 9. Bibliografía
 Likebupt. (2023, 1 junio). Agrupación en clústeres K-means: referencia del componente - Azure Machine Learning. Microsoft Learn. https://learn.microsoft.com/es-es/azure/machine-learning/component-reference/k-means-clustering?view=azureml-api-2 
 Okereke, G. E., Bali, M. C., Okwueze, C. N., Ukekwe, E. C., Echezona, S. C., & Ugwu, C. I. (2023). K-means clustering of electricity consumers using time-domain features from smart meter data. Journal of Electrical Systems and Information Technology, 10(1), 2. doi:https://doi.org/10.1186/s43067-023-00068-3 
