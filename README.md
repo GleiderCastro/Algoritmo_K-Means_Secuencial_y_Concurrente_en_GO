@@ -4,7 +4,7 @@ K-means es un método de agrupación muy utilizado en la minería de datos, tien
 Nuestro objetivo es aplicar este algoritmo con el uso de goroutines en el lenguaje GO, utilizando así la programación concurrente de manera eficiente.
 Utilizaremos datos aleatorios creados en el mismo código (1000000 registros) y nuestro número de clústeres será de 3 (K=3).
 # 2. Algoritmo Secuencial(K-Means) secuencial y de manera concurrente.
-##Explicación del Algoritmo Secuencial(K-Means). 
+## Explicación del Algoritmo Secuencial(K-Means). 
 ## 2.1. El código implementa el algoritmo K-means para realizar clustering en un conjunto de puntos. Aquí un desglose de su funcionamiento:
 ### 2.1.1. Generación de puntos aleatorios:
 La función generatePoints crea un conjunto de n puntos con coordenadas X e Y aleatorias dentro del rango (0, 100).
