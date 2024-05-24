@@ -57,21 +57,26 @@ La actualización de cada centroide requiere sumar los puntos asignados a ese cl
 
 ## 4.1. Algoritmo K-means en Go de manera secuencial
 Este código implementa el algoritmo K-means en Go de manera secuencial. Inicializa aleatoriamente los centroides, asigna puntos de datos a los centroides más cercanos en cada iteración y actualiza los centroides con la media de los puntos asignados. Finalmente, imprime los centroides finales y las asignaciones de los puntos de datos.
+![image](https://github.com/GleiderCastro/Algoritmo_K-Means_Secuencial_y_Concurrente_en_GO/assets/81375850/229949b1-fe6d-46c2-82b8-659757b7ad47)
 
 ## 4.2. Algoritmo K-means en Go de manera concurrente
 La diferencia significativa entre esta versión concurrente y la implementación secuencial anterior radica en cómo maneja la asignación de puntos de datos y las actualizaciones de centroides. Al utilizar goroutines y primitivas de sincronización, el código realiza estas tareas de manera concurrente. Este enfoque puede mejorar potencialmente la velocidad de ejecución general aprovechando los múltiples núcleos o subprocesos disponibles en el sistema.
+![image](https://github.com/GleiderCastro/Algoritmo_K-Means_Secuencial_y_Concurrente_en_GO/assets/81375850/37398fa9-39bc-41b4-a5d2-fe118859db42)
 
 # 5. Explicación de la simulación realizada con promela, pegar las imágenes de evidencia. 
 
 En la simulación con promela, se definen 3 canales(data_chanel,centroid_chanel y convergence_chanel) estos canales sirven para la comunicación entre los diferentes procesos. Después los procesos de “datageneratos” y “centroidinitializer” son los procesos donde se generan los datos que necesitamos y los centroides.
 Después se verifican si los procesos convergieron con el proceso “convergencechecker” y envía una señal a través del canal correspondiente y por último el proceso main inicializa todos los procesos.
 
+![image](https://github.com/GleiderCastro/Algoritmo_K-Means_Secuencial_y_Concurrente_en_GO/assets/81375850/cc8e48c1-5c60-4f33-8dbb-f6614ae220d1)
 
+![image](https://github.com/GleiderCastro/Algoritmo_K-Means_Secuencial_y_Concurrente_en_GO/assets/81375850/367d5359-48c4-4237-9907-1c4b40fb193d)
 
 # 6. Explicación del análisis usando spin.
 
 Una vez ejecutado el código con el comando “spin -a” se crea en nuestra carpeta varios archivos, el más importante es el archivo “pan.c”, luego ejecutamos el código “gcc -o pan pan.c” para que se pueda crear el archivo “pan”(Que aparece en verde en la primera imagen). luego para poder ejecutar el archivo se utiliza el comando “./pan”.
 
+![image](https://github.com/GleiderCastro/Algoritmo_K-Means_Secuencial_y_Concurrente_en_GO/assets/81375850/b7c3a9bb-0baa-4c48-b3f6-74d0add23440)
 
 
 Esto es lo que se obtiene cuando se ejecuta el comando “./pan” donde nos muestra información importante como:
@@ -83,6 +88,9 @@ Esto es lo que se obtiene cuando se ejecuta el comando “./pan” donde nos mue
 * El número total de transiciones exploradas en la simulación (227).
 * El número de conflictos de hash resueltos (0).
 * Para terminar en la parte final proporciona información estadística sobre el uso de la memoria en la simulación.
+
+![image](https://github.com/GleiderCastro/Algoritmo_K-Means_Secuencial_y_Concurrente_en_GO/assets/81375850/99deaa96-97dd-4727-b502-9590e6dac327)
+
 
 # 7. Conclusiones.
 El uso de goroutines nos permite asignar puntos a los centroides de manera concurrente, acelerando así el proceso de asignación en comparación con un enfoque secuencial.
