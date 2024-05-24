@@ -61,6 +61,7 @@ Este código implementa el algoritmo K-means en Go de manera secuencial. Inicial
 
 ## 4.2. Algoritmo K-means en Go de manera concurrente
 La diferencia significativa entre esta versión concurrente y la implementación secuencial anterior radica en cómo maneja la asignación de puntos de datos y las actualizaciones de centroides. Al utilizar goroutines y primitivas de sincronización, el código realiza estas tareas de manera concurrente. Este enfoque puede mejorar potencialmente la velocidad de ejecución general aprovechando los múltiples núcleos o subprocesos disponibles en el sistema.
+
 ![image](https://github.com/GleiderCastro/Algoritmo_K-Means_Secuencial_y_Concurrente_en_GO/assets/81375850/37398fa9-39bc-41b4-a5d2-fe118859db42)
 
 # 5. Explicación de la simulación realizada con promela, pegar las imágenes de evidencia. 
